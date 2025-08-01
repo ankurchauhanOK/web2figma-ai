@@ -2,28 +2,43 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Figma Plugin UI</title>
+    <title>Web2Figma Plugin UI</title>
     <link href="./src/output.css" rel="stylesheet" />
   </head>
-  <body class="bg-white p-4">
-    <h1 class="text-xl font-bold mb-4 text-blue-600">Web2Figma UI</h1>
+  <body class="bg-white p-4 font-sans">
+    <h1 class="text-xl font-bold mb-4 text-blue-600">Web2Figma.AI</h1>
 
     <input
       id="url"
-      placeholder="Paste URL"
-      class="border p-2 rounded w-full mb-2"
+      type="text"
+      placeholder="Paste website URL"
+      class="border p-2 rounded w-full mb-3"
     />
-    <button
-      id="submit"
-      class="bg-green-600 text-white px-4 py-2 rounded"
-    >
-      Load
-    </button>
+
+    <div class="flex gap-2">
+      <button
+        id="submit"
+        class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded"
+      >
+        Load Website
+      </button>
+
+      <button
+        id="loadSchema"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded"
+      >
+        Load Layout Schema
+      </button>
+    </div>
 
     <script>
       document.getElementById("submit").onclick = () => {
         const url = document.getElementById("url").value;
         parent.postMessage({ pluginMessage: { type: "load-url", url } }, "*");
+      };
+
+      document.getElementById("loadSchema").onclick = () => {
+        parent.postMessage({ pluginMessage: { type: "load-schema" } }, "*");
       };
     </script>
   </body>

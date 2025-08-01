@@ -1,0 +1,59 @@
+{
+    "type": "FRAME",
+    "name": "Section Container",
+    "layoutMode": "VERTICAL",
+    "primaryAxisSizingMode": "AUTO",
+    "counterAxisSizingMode": "FIXED",
+    "itemSpacing": 16,
+    "paddingLeft": 24,
+    "paddingRight": 24,
+    "paddingTop": 32,
+    "paddingBottom": 32,
+    "children": [
+      {
+        "type": "TEXT",
+        "name": "Heading",
+        "characters": "Welcome to Our Website",
+        "fontSize": 32,
+        "fontName": {
+          "family": "Inter",
+          "style": "Bold"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": { "r": 0, "g": 0, "b": 0 }
+          }
+        ]
+      },
+      {
+        "type": "TEXT",
+        "name": "Subheading",
+        "characters": "Your modern design companion",
+        "fontSize": 18,
+        "fontName": {
+          "family": "Inter",
+          "style": "Regular"
+        },
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": { "r": 0.2, "g": 0.2, "b": 0.2 }
+          }
+        ]
+      },
+      {
+        "type": "RECTANGLE",
+        "name": "Button",
+        "width": 160,
+        "height": 48,
+        "fills": [
+          {
+            "type": "SOLID",
+            "color": { "r": 0, "g": 0.5, "b": 1 }
+          }
+        ]
+      }
+    ]
+  }
+    
