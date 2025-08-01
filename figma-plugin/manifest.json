@@ -1,0 +1,14 @@
+{
+    "name": "Web2Figma.AI",
+    "id": "web2figma-plugin",
+    "api": "1.0.0",
+    "main": "code.js",
+    "ui": {
+      "html": "ui.html",
+      "width": "400",
+      "height": "300"
+    },
+    "editorType": ["figma"],
+    "permissions": ["currentuser"]
+  }
+  
